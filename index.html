@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CMCS - Institutional Portal Prototype</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div class="screen login-screen">
+            <div class="login-wrapper">
+                <div class="logo-area">
+                    <div class="logo-icon-bg">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                </div>
+                <h1>Class Management &<br>Communication System</h1>
+                <p class="subtitle">INSTITUTIONAL PORTAL</p>
+
+                <form class="login-form" style="width: 400px;">
+                    <div class="input-group">
+                        <label>INSTITUTIONAL EMAIL / ID</label>
+                        <div class="input-with-icon">
+                            <i class="bi bi-envelope"></i>
+                            <input type="email" value="alex.student@university.edu" id="email" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>SECURITY PASSWORD</label>
+                        <div class="input-with-icon">
+                            <i class="bi bi-lock"></i>
+                            <input type="password" value="password123" id="password" required>
+                            <i class="bi bi-eye password-toggle"></i>
+                        </div>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="remember-me"><input type="checkbox"> Remember device</label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="login-btn">Secure Login <i class="bi bi-arrow-right"></i></button>
+                </form>
+
+                <div class="divider"><span>AUTHORIZED ACCESS ONLY</span></div>
+
+                <div class="role-selector">
+                    <button class="role-btn active" data-role="student" data-email="alex.student@university.edu">
+                        <i class="bi bi-bank"></i>
+                        <span>STUDENT</span>
+                    </button>
+                    <button class="role-btn" data-role="lecturer" data-email="lukeman.eng@university.edu">
+                        <i class="bi bi-person-badge"></i>
+                        <span>LECTURER</span>
+                    </button>
+                    <button class="role-btn" data-role="admin" data-email="vance.arthur@university.edu">
+                        <i class="bi bi-shield-check"></i>
+                        <span>ADMIN</span>
+                    </button>
+                </div>
+
+                <p class="footer-text">
+                    By logging in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.<br>
+                    © 2024 CMCS Academic Systems v2.4.0
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

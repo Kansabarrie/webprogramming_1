@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Student Dashboard - CMCS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div class="screen nav-screen student-dashboard-screen">
+            <header class="app-header">
+                <div class="user-greeting">
+                    <div class="avatar-stub">H</div>
+                    <div class="greeting-text">
+                        <span class="hi">Hi,</span> <span class="user-name">Alex</span>
+                    </div>
+                </div>
+                <div class="header-icons">
+                    <i class="bi bi-bell"></i>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-pic">
+                </div>
+            </header>
+            
+            <div class="screen-content nav-screen-content">
+                <div class="dashboard-widgets-row">
+                    <div class="widget attendance-widget">
+                        <h3>Attendance</h3>
+                        <div class="progress-circle-container">
+                            <svg class="progress-ring" width="100" height="100">
+                                <circle class="progress-ring__circle-bg" stroke="#E0F2FE" stroke-width="8" fill="transparent" r="40" cx="50" cy="50"/>
+                                <circle class="progress-ring__circle" stroke="#38BDF8" stroke-width="8" fill="transparent" r="40" cx="50" cy="50" style="stroke-dasharray: 251.2; stroke-dashoffset: 32.6;"/>
+                                <text x="50" y="55" class="percentage-text" text-anchor="middle">87%</text>
+                            </svg>
+                        </div>
+                        <p class="hint">Keep it above 80% to maintain eligibility</p>
+                    </div>
+                    <div class="small-widgets-col">
+                        <div class="widget notification-widget">
+                            <h3>Notifications</h3>
+                            <div class="alerts-count">
+                                <span class="count">03</span> <span class="text">New Alerts</span>
+                            </div>
+                            <a href="#" class="view-link">View Inbox</a>
+                        </div>
+                        <div class="widget exam-widget">
+                            <div class="exam-header">
+                                <span class="label">UPCOMING EXAM</span>
+                                <i class="bi bi-info-circle"></i>
+                            </div>
+                            <h3>Data Structures</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Today's Highlight</h2>
+                    <a href="#" class="view-all">Full Timetable</a>
+                </div>
+                <div class="highlight-card student-class-card">
+                    <div class="card-status-row">
+                        <span class="status-tag ongoing">Next Class</span>
+                        <span class="time-left"><i class="bi bi-clock"></i> Starts in 12m</span>
+                        <i class="bi bi-chevron-right card-arrow"></i>
+                    </div>
+                    <h1>CS402: Software Engineering Architecture</h1>
+                    <p class="location">Block C - Room 304</p>
+                    <div class="prof-footer">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Prof" class="prof-pic">
+                        <div class="prof-details">
+                            <p class="prof-name">Prof. Sarah Jenkins</p>
+                            <p class="dept">Department of Computer Science</p>
+                        </div>
+                        <span class="time-slot">09:30 AM - 11:00 AM</span>
+                    </div>
+                </div>
+
+                <h2>Quick Actions</h2>
+                <div class="quick-actions-grid">
+                    <a href="attendance_records.html" class="qa-btn text-link">
+                        <i class="bi bi-clipboard-check"></i>
+                        <span>Attendance</span>
+                    </a>
+                    <button class="qa-btnStub">
+                        <i class="bi bi-calendar3"></i>
+                        <span>Timetable</span>
+                    </button>
+                    <button class="qa-btnStub has-badge">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge">3</span>
+                        <span>Alerts</span>
+                    </button>
+                    <button class="qa-btn logout-trigger">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Logout</span>
+                    </button>
+                </div>
+
+                <h2>Recent Announcements</h2>
+                <div class="announcement-card">
+                    <i class="bi bi-info-circle announcement-icon"></i>
+                    <div class="announcement-text">
+                        <h3>Final Project Submission Date</h3>
+                        <p class="meta">Academic • 2h ago</p>
+                    </div>
+                    <i class="bi bi-chevron-right card-arrow"></i>
+                </div>
+            </div>
+
+            <nav class="bottom-nav student-nav">
+            </nav>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Attendance Records - CMCS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container sub-screen-container">
+        
+        <div class="screen nav-screen sub-screen attendance-records-screen">
+            <header class="app-header sub-header sticky">
+                <a href="student_dashboard.html" class="back-btn"><i class="bi bi-chevron-left"></i></a>
+                <h1>Attendance Records</h1>
+                <div class="header-icons">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </header>
+            
+            <div class="screen-content nav-screen-content">
+                <div class="widget monthly-progress-widget">
+                    <div class="progress-header">
+                        <h2>Monthly Progress</h2>
+                        <span class="overall-badge">88% Overall</span>
+                    </div>
+                    <p class="sub">Academic Year 2023-24</p>
+                    <div class="attendance-chart-stub">
+                        <div class="chart-bars">
+                            <div class="bar-group"><div class="bar present" style="height: 70%;"></div><div class="bar absent" style="height: 10%;"></div><span>Jan</span></div>
+                            <div class="bar-group"><div class="bar present" style="height: 85%;"></div><div class="bar absent" style="height: 5%;"></div><span>Feb</span></div>
+                            <div class="bar-group"><div class="bar present" style="height: 60%;"></div><div class="bar absent" style="height: 25%;"></div><span>Mar</span></div>
+                            <div class="bar-group"><div class="bar present" style="height: 75%;"></div><div class="bar absent" style="height: 10%;"></div><span>Apr</span></div>
+                            <div class="bar-group"><div class="bar present" style="height: 80%;"></div><div class="bar absent" style="height: 12%;"></div><span>May</span></div>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <span class="legend-item"><span class="dot present"></span> Present</span>
+                        <span class="legend-item"><span class="dot absent"></span> Absent</span>
+                    </div>
+                    <div class="info-note">
+                        <i class="bi bi-info-circle"></i>
+                        <p>Maintain at least 75% attendance to remain eligible for end-semester examinations.</p>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Detailed Logs</h2>
+                    <button class="filter-btn"><i class="bi bi-filter"></i> Filter</button>
+                </div>
+                <div class="filter-pills">
+                    <button class="pill active">All</button>
+                    <button class="pill">Present</button>
+                    <button class="pill">Absent</button>
+                    <button class="pill">Late</button>
+                </div>
+
+                <div class="log-list">
+                    <div class="log-card present">
+                        <div class="log-main">
+                            <span class="course-code">CS301</span>
+                            <h3>Advanced Algorithms</h3>
+                            <p class="dateTime"><i class="bi bi-calendar3"></i> Oct 24, 2024</p>
+                            <p class="dateTime"><i class="bi bi-clock"></i> 09:00 AM - 11:00 AM</p>
+                        </div>
+                        <div class="log-status">
+                            <span class="status-badge present">Present</span>
+                            <i class="bi bi-chevron-right arrow"></i>
+                        </div>
+                    </div>
+                    <div class="log-card absent">
+                        <div class="log-main">
+                            <span class="course-code">MAT202</span>
+                            <h3>Linear Algebra</h3>
+                            <p class="dateTime"><i class="bi bi-calendar3"></i> Oct 23, 2024</p>
+                            <p class="dateTime"><i class="bi bi-clock"></i> 02:00 PM - 04:00 PM</p>
+                        </div>
+                        <div class="log-status">
+                            <span class="status-badge absent">Absent</span>
+                            <i class="bi bi-chevron-right arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-secondary load-more">Load Previous Months</button>
+            </div>
+            <nav class="bottom-nav student-nav"></nav>
+        </div>
+
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

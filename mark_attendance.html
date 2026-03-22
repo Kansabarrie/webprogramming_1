@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mark Attendance - CMCS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container sub-screen-container">
+        
+        <div class="screen nav-screen sub-screen mark-attendance-screen">
+            <header class="app-header sub-header sticky">
+                <a href="lecturer_hub.html" class="back-btn"><i class="bi bi-chevron-left"></i></a>
+                <h1>CS101 Attendance</h1>
+                <div class="header-icons">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </header>
+            
+            <div class="screen-content roster-content">
+                <div class="class-header-widget widget">
+                    <div class="title-row">
+                        <h2>Computer Science 300</h2>
+                        <span class="count-badge"><i class="bi bi-people"></i> 1/7</span>
+                    </div>
+                    <p class="loc"><i class="bi bi-geo-alt"></i> Lecture Hall B-12</p>
+                    <div class="info-pills">
+                        <div class="pill date-pill">
+                            <i class="bi bi-calendar3"></i>
+                            <div class="text"><span>DATE</span> <strong>Feb 17, 2026</strong></div>
+                        </div>
+                        <div class="pill time-pill">
+                            <i class="bi bi-clock"></i>
+                            <div class="text"><span>SESSION START</span> <strong>01:40 PM</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-filter-row">
+                    <div class="search-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search students...">
+                    </div>
+                    <button class="icon-btn filter-btn"><i class="bi bi-filter"></i></button>
+                </div>
+
+                <div class="roster-header">
+                    <span>STUDENT ROSTER (7)</span>
+                    <span>STATUS</span>
+                </div>
+                <div class="student-list">
+                    <div class="student-item card widget">
+                        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Student" class="stud-pic">
+                        <div class="stud-details">
+                            <h3>Chernor Saidu</h3>
+                            <p>ID92881</p>
+                        </div>
+                        <div class="status-actions">
+                            <button class="status-btn present"><i class="bi bi-check-circle"></i> P</button>
+                            <button class="status-btn absent"><i class="bi bi-x-circle"></i> A</button>
+                        </div>
+                    </div>
+                    <div class="student-item present-marked card widget">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student" class="stud-pic">
+                        <div class="stud-details">
+                            <h3>Sanunu Barrie</h3>
+                            <p>ID106912</p>
+                            <span class="marked-tag present"><i class="bi bi-check"></i> Present</span>
+                        </div>
+                        <div class="status-actions">
+                            <button class="status-btn present active"><i class="bi bi-check-circle"></i> P</button>
+                            <button class="status-btn absent"><i class="bi bi-x-circle"></i> A</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-action-bar sticky-bar">
+                <div class="progress-info">
+                    <span>PROGRESS</span>
+                    <strong>2 of 7 Marked</strong>
+                    <div class="progress-bar-stub"><div class="bar" style="width: 28%"></div></div>
+                </div>
+                <button class="btn-primary full-width-btn">Mark All Students (5 Left)</button>
+            </div>
+            <nav class="bottom-nav lecturer-nav"></nav>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
